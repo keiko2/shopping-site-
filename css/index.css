@@ -131,6 +131,7 @@ main:after {
     line-height: 18px;
     text-align: left;
     text-decoration: none;
+    color: black;
     padding-top: 10px;
 }
 
@@ -174,6 +175,7 @@ main:after {
     line-height: 18px;
     text-align: left;
     text-decoration: none;
+    color: black;
     padding-top: 10px;
 }
 
@@ -186,6 +188,9 @@ main:after {
     padding-bottom: 25px;
     text-align: left;
 }
+
+
+/* サイド */
 
 #side-nav {
     display:block;
@@ -209,7 +214,7 @@ main:after {
 #form02{
     background-color: #eeeeee;
     width:180px;
-    height: 30px;
+    height: 28px;
     content: "";
     display: block;
     clear: both;
@@ -236,7 +241,7 @@ main:after {
 
 #side-nav .pagelink  {
     background-color: #887f69;
-    height: 50px;
+    height: 45px;
     width: 220px;
     text-align: left;
     margin-bottom: 15px;
@@ -252,7 +257,7 @@ main:after {
 
 #side-nav .categories  {
     background-color: #887f69;
-    height: 50px;
+    height: 40px;
     width: 220px;
     text-align: left;
     margin-bottom: 5px;
@@ -260,7 +265,7 @@ main:after {
 
 #side-nav .categories a {
     display: block;
-    padding-top: 18px;
+    padding-top: 15px;
     padding-bottom: 18px;
     padding-left: 20px;
 }
@@ -275,16 +280,17 @@ main:after {
 
 #side-nav .categories ul li a{
     text-decoration: none;
+    color: black;
     display: block;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 20px;
-    border-bottom: 5px solid #f9f8f6;
+    border-bottom: 2px solid #f9f8f6;
 }
 
 #side-nav .about1  {
     background-color: #887f69;
-    height: 50px;
+    height: 45px;
     width: 220px;
     text-align: left;
     margin-top: 300px;
@@ -293,9 +299,9 @@ main:after {
 
 #side-nav .about1 a {
     display: block;
-    padding-top: 12px;
+    padding-top: 8px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 10px;
 }
 
@@ -326,7 +332,7 @@ main:after {
 
 #side-nav .about2  {
     background-color: #887f69;
-    height: 50px;
+    height: 45px;
     width: 220px;
     text-align: left;
     margin-top: 270px;
@@ -367,6 +373,9 @@ main:after {
      display: block;
      padding-left: 40px;
 }
+
+
+/* ガイド */
 
 #guide .shopping-guide a {
     display: block;
@@ -484,6 +493,9 @@ main:after {
     margin-bottom: 0px;
 }
 
+
+/* フッター */
+
 footer #page-top {
     display: block;
     text-align: right;
@@ -509,9 +521,211 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
+    color: black;
 }
 
 footer #copyright {
     text-align: center;
     margin-bottom: 150px;
+}
+
+
+
+
+/* ===================================商品一覧=================================== */
+
+/* メイン */
+
+main #mein-contents .main_image2 {
+    width: 700px;
+    height: 200px;
+}
+
+main #main-contents #main-nav ul {
+    height: 30px;
+    display: block;
+    background-color: #e8e4da;
+    padding-left: 5px;
+}
+
+main #main-contents #main-nav ul li {
+    display: inline-block;
+    padding: 0px;
+    padding-top: 10px;
+    margin-right: 0px;
+    letter-spacing: 1px;
+}
+
+main #main-contents #main-nav ul li a {
+    text-decoration: none;
+    padding: 0px;
+    margin-left: 0px;
+    font-size: 11px;
+}
+
+main #main-contents #main-nav ul li img {
+    width: 12px;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+
+/* 一覧 */
+
+#main-contents .item-box {
+    display: block;
+    background-color: white;
+    margin-top:10px;
+}
+
+#main-contents .item-box ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#main-contents .item-box ul li {
+    display: block;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+#main-contents .item-box ul a {
+    text-decoration: none;
+}
+
+#main-contents .item-box p{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+#main-contents .item-box .en{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top:10px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+#main-contents .btn .btn1 {
+    float: left;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    background-color: #887f69;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#main-contents .btn .btn1 p {
+    margin-top: 15px;
+}
+
+#main-contents .btn .btn2 {
+    float: right;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    background-color: #887f69;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#main-contents .btn .btn2 p {
+    margin-top: 15px;
+}
+
+/* 最近見たページ */
+
+#mitamono h2 {
+    margin-bottom: 30px;
+}
+
+#mitamono .item-box {
+    display: block;
+    background-color: white;
+    margin-top:10px;
+}
+
+#miatmono ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#mitamono .item-box ul li {
+   display: block;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 15px;
+    border-color: 2px solid #f9f8f6;
+}
+
+#mitamono ul a {
+    text-decoration: none;
+}
+
+#mitamono p{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+}
+
+#mitamono .en{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top:10px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+
+
+
+#main-contents  {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+#main-contents:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+#main-contents .btn a {
+    display: block;
+    
 }

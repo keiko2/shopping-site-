@@ -14,15 +14,18 @@
    <!-- CSS––––––––––––––––––––––––––––––––––––––––––––––––––-->
    
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-
+<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/index.css">
+        
     </head>
     <body>
         <header>
             <div id="header_in" class="container">
-                <h1 id="logo">
+                <h1 class="logo">
                     <a href="#"><img src="./images/top/logo.png" alt="ロゴ"></a>
                 </h1>
                 <nav id="top-nav">
@@ -32,7 +35,7 @@
                         <li><a href=""><img src="./images/top/menu_mypage.png" alt="マイページ"></a></li>
                         <li><a href=""><img src="./images/top/menu_guide.png" alt="ショッピングガイド"></a></li>
                         <li><a href=""><img src="./images/top/facebook.png" alt="フェイスブック"></a></li>
-                        <li><a href=""><img src="./images/top/insta.png" alt="インスタグラム"></a></li>
+                        <li class="last-list"><a href=""><img src="./images/top/insta.png" alt="インスタグラム"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,62 +50,48 @@
                             <li><a href="#">カテゴリー名</a></li>
                         </ul>
                     </nav>
-                    <div class="main_image">
+                    <div class="main_image2">
                         <img src="./images/list/cate_image.jpg" alt="カテゴリーメイン画像">
                     </div>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_01.jpg" alt="item 01"></a>
+                    <section class="item-box">
+                    <ul>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_01.jpg" alt="item 01"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_02.jpg" alt="item 02"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_03.jpg" alt="item 03"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_04.jpg" alt="item 04"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_05.jpg" alt="item 05"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_06.jpg" alt="item 06"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_01.jpg" alt="item 01"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_02.jpg" alt="item 02"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_03.jpg" alt="item 03"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                    </ul>
                     </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_02.jpg" alt="item 02"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_03.jpg" alt="item 03"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_04.jpg" alt="item 04"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_05.jpg" alt="item 05"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_06.jpg" alt="item 06"></a>
-                    </section>
-                     <section class="itembox">
-                        <a href="#"><img src="./images/top/item_01.jpg" alt="item 01"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_02.jpg" alt="item 02"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_03.jpg" alt="item 03"></a>
-                    </section>
-            </div>
+            
                     
             <div class="btn">
-                <a href="#">BACK</a>
-                <a href="#">NEXT</a>
+                <a class="btn1" href="#"><p>BACK</p></a>
+                <a class="btn2" href="#"><p>NEXT</p></a>
             </div>
-                    
-                    <h2 id="poplar-items">
+                    <section id="mitamono">
+                    <h2 class="item">
                         <a href="#"><img src="./images/list/recent_pro_pc.png" alt="最近見たもの"></a>
                     </h2>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_07.jpg" alt="item 07"></a>
+                    <section class="item-box">
+                    <ul>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_07.jpg" alt="item 07"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_08.jpg" alt="item 08"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                        <li class="itembox"><a href="#"><img src="./images/top/item_09.jpg" alt="item 09"><p>商品名が入ります。商品名が入ります。<br>商品名が入ります。</p><p class="en">&yen;1,000(tax in)</p></a></li>
+                    </ul>
                     </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_08.jpg" alt="item 08"></a>
-                    </section>
-                    <section class="itembox">
-                        <a href="#"><img src="./images/top/item_09.jpg" alt="item 09"></a>
                     </section>
                     
-                    <h2 id="guide">
+                    <section id="guide">    
+                    <h2 class="shopping-guide">
                         <a href="#"><img src="./images/top/title_guide.png" alt="ショッピングガイド"></a>
                     </h2>
                     <section class="shopping-guide">
                         <div class="guide">
-                            <h3>お届けについて</h3>
+                            <h3 class="otodoke">お届けについて</h3>
                             <img src="./images/top/otodoke_banner.png" alt="配送について">
                             <h4>&#9632;&#9711;&#9711;運輸</h4>
                             <p>送料 &yen;000 円</p>
@@ -119,58 +108,76 @@
                             <p>お振込み手数料お客様負担。<br>ご入金後の発送となります。</p>
                         </div>
                     </section>
-                    <section id="page-top">
-                        <a href="#"><img src="./images/top/pagetop.png" alt="ページトップへ"></a>
-                    </section>
+                </section>
+            </div>
             <nav id="side-nav">
                 <div class="itemsearch">
                     <h3>
                     <img src="./images/top/itemsearch.png" alt="商品検索">
                     </h3>
-                    <input type="text">
+                    <form id="form02" action="#">
+                    <input id="input02" type="text" placeholder="Search...">
+                    </form>
                 </div>
                 <div class="pagelink">
                     <h3>
-                    <img src="./images/top/pagelink.png" alt="ページリンク">
+                    <a href="#"><img src="./images/top/pagelink.png" alt="ページリンク"></a>
                     </h3>
                 </div>
                 <div class="categories">
                     <h3>
-                    <img src="./images/top/categories.png" alt="カテゴリー">
+                    <a href="#"><img src="./images/top/categories.png" alt="商品カテゴリー"></a>
                     </h3>
                         <ul class="oritatami">
-                            <li>カテゴリー名</li>
-                            <li>カテゴリー名</li>
-                            <li>カテゴリー名</li>
-                            <li>カテゴリー名</li>
-                            <li>カテゴリー名</li>
-                            <li>カテゴリー名</li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
+                            <li class="categorie"><a href="#">カテゴリー名</a></li>
                         </ul>
                 </div>
-                <div class="about">
+                <div class="about1">
                     <h3>
-                    <img src="./images/top/about.png" alt="このサイトについて">
+                    <a href="#"><img src="./images/top/about.png" alt="このサイトについて"></a>
                     </h3>
-                    <img src="./images/top/about_img.jpg" alt="お店の説明">
+                        <div class="shop-foto">
+                    <img src="./images/top/about_img.jpg" alt="お店の写真">
                     <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
-                    <a href="#"><img src="./images/top/more_btn.png" alt="お店の説明"></a>
-                    
+                    <a href="#"><img src="./images/top/more_btn.png" alt="その他ボタン"></a>
+                    </div>
+                </div>
+                <div class="about2">    
                     <h3>
-                    <img src="./images/top/shop_info.png" alt="お店の写真">
+                    <a href="#"><img src="./images/top/shop_info.png" alt="お店について"></a>
                     </h3>
+                        <div class="shop-foto">
                     <img src="./images/top/shopinfo_img.jpg" alt="お店の写真">
                     <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
-                    <a href="#"><img src="./images/top/more_btn.png" alt="その他"></a>
+                    <a href="#"><img src="./images/top/more_btn.png" alt="お店の写真"></a>
+                        </div>
                 </div>
             </nav>
         </main>
         <footer>
-                <a href="#"><p>特定商取引に基づく表記</p></a><p>&#x2022;</p>
-                <a href="#"><p>プライバシーポリシー</p></a><p>&#x2022;</p>
-                <a href="#"><p>マイページ</p></a><p>&#x2022;</p>
+            <section id="page-top">
+                        <a href="#"><img src="./images/top/pagetop.png" alt="ページトップへ"></a>
+                    </section>
+                <div class="nav">
+                    <ul>
+                    <li><a href="#">特定商取引に基づく表記</a></li>
+                    <li>&#x2022;</li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li>&#x2022;</li>
+                    <li><a href="#">マイページ</a></li>
+                    </ul>
+                </div>
             <div id="copyright">
                 <small>copyright (C) APPLE BERRY all rights reserved.</small>
             </div>
         </footer>
     </body>
 </html>
+
+
+
