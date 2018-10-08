@@ -195,16 +195,15 @@ main:after {
 #side-nav {
     display:block;
     width: 220px;
-    height: 1180px;
     float:right;
     margin-left: 10px;
-    background-color: white;
 }
 
 #side-nav .itemsearch {
     margin: 0 0 0 auto;
     padding: 20px;
     border-bottom: 10px solid #eeeeee;
+    background-color: white;
 }
 
 #side-nav .itemsearch img {
@@ -240,11 +239,16 @@ main:after {
 }
 
 #side-nav .pagelink  {
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+#side-nav .pagelink h3 {
     background-color: #887f69;
     height: 45px;
     width: 220px;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 #side-nav .pagelink a {
@@ -256,6 +260,8 @@ main:after {
 }
 
 #side-nav .categories  {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #887f69;
     height: 40px;
     width: 220px;
@@ -272,7 +278,6 @@ main:after {
 
 #side-nav .categories ul {
     display: block;
-    background-color: white;
     height: 45px;
     width: 220px;
     text-align: left;
@@ -280,6 +285,7 @@ main:after {
 
 #side-nav .categories ul li a{
     text-decoration: none;
+    background-color: white;
     color: black;
     display: block;
     padding-top: 18px;
@@ -289,6 +295,10 @@ main:after {
 }
 
 #side-nav .about1  {
+    background-color: white;
+}
+
+#side-nav .about1  h3 {
     background-color: #887f69;
     height: 45px;
     width: 220px;
@@ -296,6 +306,7 @@ main:after {
     margin-top: 300px;
     margin-bottom: 20px;
 }
+    
 
 #side-nav .about1 a {
     display: block;
@@ -331,36 +342,49 @@ main:after {
 }
 
 #side-nav .about2  {
+    background-color: white;
+}
+
+#side-nav .about2  h3 {
     background-color: #887f69;
     height: 45px;
     width: 220px;
     text-align: left;
-    margin-top: 270px;
+    margin-bottom: 20px;
 }
+    
 
 #side-nav .about2 a {
     display: block;
-    padding-top:20px;
-    padding-bottom: 38px;
-    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     margin-bottom: 10px;
 }
 
 #side-nav .about2 .shop-foto img {
     display: block;
     margin: 12px;
-    margin-top: 0px;
-    padding-top: 0px;
-    
 }
 
 #side-nav .about2 p {
     display: block;
     margin: 10px;
-    margin-bottom: 0px;
     font-size: 10px;
     letter-spacing: 0.3rem;
     line-height: normal;
+}
+
+#side-nav .about2 img {
+    display: block;
+    margin: 10px;
+    padding-bottom: 0px;
+}
+
+#side-nav .about2 .shop-foto a{
+     display: block;
+     padding-left: 40px;
+     padding-top: 0px;
 }
 
 #side-nav .about1 img {
@@ -561,6 +585,7 @@ main #main-contents #main-nav ul li a {
     padding: 0px;
     margin-left: 0px;
     font-size: 11px;
+    color: #887f69;
 }
 
 main #main-contents #main-nav ul li img {
@@ -718,14 +743,118 @@ main #main-contents #main-nav ul li img {
     clear: both;
 }
 
-
-
-
-
-
-
-
 #main-contents .btn a {
     display: block;
-    
 }
+
+
+
+
+/* ===================================商品説明=================================== */
+
+/* メイン */
+
+#item-contents .item-name {
+    display: block;
+    width: 580px;
+    height: 80px;
+    border-bottom: 2px solid #e8e4da;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#item-contents .item-name h3 {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    padding-top: 35px;
+    padding-bottom: auto;
+    float: left;
+}
+
+#item-contents .item-name h4 {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #887f69;
+}
+
+#item-contents .large-box .mein-image {
+    display: block;
+    float: left;
+}
+
+#item-contents {
+    background-color: white;
+}
+
+
+#photoArea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.large-box {
+   width:60%;    
+}
+.large-box img {
+   width:410px;  
+}
+
+#item-photo {
+   display: block;
+   width:25%; 
+   margin: 0px;
+   padding: 0px;
+}
+#item-photo img {
+   width:75px;
+}
+
+#item-photo .item-photo1 {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+#item-photo .item-photo1 img {
+    margin-bottom: 6px;
+}
+
+#item-photo .item-photo2 {
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+
+#item-photo .item-photo2 img {
+    margin-bottom: 6px;
+}
+
+
+/* サイズ・カラー */
+
+#mein-contents #item-contents #size-color {
+    display: block;
+    width: 780px;
+    margin-top: 
+}
+
+
+#mein-contents #item-contents .title {
+    display:block;
+    width: 110px;
+    height: 40px;
+}
+
+
+
+
+
