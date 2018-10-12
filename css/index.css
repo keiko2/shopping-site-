@@ -122,6 +122,10 @@ main:after {
 
 #new-items .item-box ul a {
     text-decoration: none;
+    padding: 0px;
+    margin-left: 0px;
+    font-size: 11px;
+    color: #887f69;
 }
 
 #new-items p{
@@ -158,10 +162,11 @@ main:after {
 
 #poplar-items .item-box ul li {
    display: block;
-    margin-left: 15px;
-    margin-right: 0px;
-    margin-top: 15px;
-    border-color: 2px solid #f9f8f6;
+    margin: 2px;
+    background-color: white;
+    padding: 6px;
+    padding-top: 12px;
+    text-align: center;
 }
 
 #poplar-items ul a {
@@ -600,8 +605,8 @@ main #main-contents #main-nav ul li img {
 
 #main-contents .item-box {
     display: block;
-    background-color: white;
     margin-top:10px;
+    border: #f9f8f6;
 }
 
 #main-contents .item-box ul{
@@ -611,9 +616,13 @@ main #main-contents #main-nav ul li img {
 
 #main-contents .item-box ul li {
     display: block;
-    margin-left: 15px;
-    margin-right: 0px;
-    margin-top: 15px;
+    margin: 2px;
+    background-color: white;
+    padding: 6px;
+    padding-top: 12px;
+    text-align: center;
+    
+   
 }
 
 #main-contents .item-box ul a {
@@ -686,8 +695,8 @@ main #main-contents #main-nav ul li img {
 
 #mitamono .item-box {
     display: block;
-    background-color: white;
     margin-top:10px;
+    border: #f9f8f6;
 }
 
 #miatmono ul{
@@ -697,10 +706,11 @@ main #main-contents #main-nav ul li img {
 
 #mitamono .item-box ul li {
    display: block;
-    margin-left: 15px;
-    margin-right: 0px;
-    margin-top: 15px;
-    border-color: 2px solid #f9f8f6;
+    margin: 2px;
+    background-color: white;
+    padding: 6px;
+    padding-top: 12px;
+    text-align: center;
 }
 
 #mitamono ul a {
@@ -711,11 +721,12 @@ main #main-contents #main-nav ul li img {
     display:flex;
     flex-wrap: wrap;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     text-align: left;
     text-decoration: none;
     color: black;
     padding-top: 10px;
+    
 }
 
 #mitamono .en{
@@ -734,7 +745,7 @@ main #main-contents #main-nav ul li img {
 #main-contents  {
     content: "";
     display: block;
-    clear: both;
+    
 } 
 
 #main-contents:after {
@@ -758,7 +769,7 @@ main #main-contents #main-nav ul li img {
     display: block;
     width: 580px;
     height: 80px;
-    border-bottom: 2px solid #e8e4da;
+    border-bottom: 1px solid #e8e4da;
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -797,9 +808,10 @@ main #main-contents #main-nav ul li img {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 .large-box {
    width:60%;    
@@ -839,22 +851,278 @@ main #main-contents #main-nav ul li img {
 }
 
 
+
 /* サイズ・カラー */
 
-#mein-contents #item-contents #size-color {
+#item-contents {
     display: block;
-    width: 780px;
-    margin-top: 
+    background-color: white;
+    height: auto;
+    width: 700px;
+}
+
+#item-contents #size-color {
+    display: block;
+    height: 50px;
+    border-top: 1px solid #e8e4da;
+    padding-top: 20px;
+    padding-bottom:40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    content: "";
+}
+
+#item-contents .table {
+    display: block;
+    
+}
+
+#item-contents #size-color table {
+    width: 100%;
+    height: 70px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border: 2px solid #e8e4da;
+}
+
+#item-contents #size-color table tr th {
+    height: 35px;
+    border: 2px solid #e8e4da;
+    margin-right: 60px;
+    font-weight: bold;
+    color: #887f69;
+    background-color: #f9f9f5;
+    vertical-align: middle;
+}
+
+#item-contents #size-color table tr td {
+    height: 35px;
+    border: 2px solid #e8e4da;
+    margin-right: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+    color: #887f69;
+}
+
+#item-contents #size-color table tr td:first-child {
+     background-color: #f9f9f5;
+     vertical-align: middle;
+     text-align: center;
+     font-size: 1rem;
+     font-weight: bold;
+}
+
+#item-contents .price-box {
+    display: block;
+    content: "";
+    clear: both;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+
+#item-contents .price-box a img {
+    display: block;
+    margin-right: 40px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding: 12px 70px 12px 0px;
+    float: left;
+}
+
+#item-contents .price-box .price {
+    display: block;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+#item-contents .price-box span {
+    font-size: 12px;
+}
+
+#item-contents .price-box .tax {
+    display: block;
+    color: black;
+    font-family: 游ゴシック;
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+    padding: 12px 50px 12px 0px;
+    margin: 0px;
+    margin-top: 2px;
+    float: left;
+}
+
+#item-contents .price-box h2 {
+border-top: 1px solid #e8e4da;
+border-bottom: 1px solid #e8e4da;
+}
+
+#item-contents .price-box #cart a img {
+    display: block;
+    text-align: center;
+    float: right;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+#item-contents .quantity {
+    display: block;
+    content: "";
+    clear: both;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 0px;
+    margin-top: 30px;
+    padding-bottom: 83px;
+}
+
+#item-contents .quantity .quantity-size  {
+    display: block;
+    margin-right: 40px;
+    margin-top: 23px;
+    margin-bottom: 0px;
+    padding: 12px 40px 12px 0px;
+    float: left;
+}
+
+#item-contents .quantity input {
+    border: 1px solid #e8e4da;
+    display: block;
+    font-size: 16px;
+    padding: 12px 0px 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    float: left;
 }
 
 
-#mein-contents #item-contents .title {
-    display:block;
-    width: 110px;
-    height: 40px;
+
+#mein-contents .about-item {
+    display: block;
+    padding-top: 20px;
+}
+
+#mein-contents .about-item .item-discription {
+   
+    width: 700px;
+    height: 80px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+#main-contents .about-item .about-textTitle {
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    width: 580px;
+    float: left;
+    vertical-align: middle;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 16px;
+    color: #887f69;
+    font-weight: bold;
+}
+
+#main-contents .about-item .about-textTitle .point {
+    display: block;
+    font-size: 25px;
+    margin-top: -5px;
+    padding-top: 0px;
+    float: left;
+    margin-left: 0px;
+    padding-right: 0px;
+}
+
+#main-contents .about-item .about-text {
+    font-family: 小塚ゴシック Pro;
+    display: block;
+    font-size: 14px;
+    line-height: 2.5rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
 }
 
 
+.about-item {
+    background-color: #ffffff;
+}
+.item-discription {
+    font-size: 16px;
+    font-weight: bold;
+    color: #887f69;
+    border-top: 1px solid #e8e4da;
+    border-bottom: 2px solid #887f69;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
 
+#size-color2 .table {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 35px;
+    
+    
+}
 
+#size-color2 table {
+    width: 100%;
+    height: 70px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+    border: 2px solid #e8e4da;
+}
 
+#size-color2 table tr th {
+    height: 35px;
+    border: 2px solid #e8e4da;
+    margin-right: 60px;
+    width: 191px;
+    font-weight: bold;
+    color: #887f69;
+    background-color: #f9f9f5;
+    vertical-align: middle;
+}
+
+#size-color2 table tr td {
+    height: 35px;
+    border: 2px solid #e8e4da;
+    margin-right: 60px;
+    padding-left: 10px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 1rem;
+    color: #887f69;
+    line-height: 18px;
+}
+
+#size-color2 table tr td:first-child {
+     background-color: #f9f9f5;
+     vertical-align: middle;
+     text-align: center;
+     font-size: 1rem;
+     font-weight: bold;
+     font-family: 小塚ゴシック Pro;
+}
