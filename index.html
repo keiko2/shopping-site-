@@ -17,7 +17,6 @@
 <!-- Owl Carousel CSS -->
         <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/skeleton.css">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/index.css">
         
@@ -28,7 +27,7 @@
         <script src="owlcarousel/owl.carousel.min.js"></script>
         
         <!-- Owl Carouselを動作させるために追加 -->
-        <script src="test-carousel.js"></script>
+        <script src="owlcarousel/test-carousel.js"></script>
     </head>
     <body>
         <header>
@@ -37,7 +36,7 @@
                     <a href="#"><img src="./images/top/logo.png" alt="ロゴ"></a>
                 </h1>
                 <nav id="top-nav">
-                    <ul>
+                    <ul class="pc_nav">
                         <li><a href=""><img src="./images/top/menu_login.png" alt="ログイン"></a></li>
                         <li><a href=""><img src="./images/top/menu_cart.png" alt="カート"></a></li>
                         <li><a href=""><img src="./images/top/menu_mypage.png" alt="マイページ"></a></li>
@@ -45,6 +44,17 @@
                         <li><a href=""><img src="./images/top/facebook.png" alt="フェイスブック"></a></li>
                         <li class="last-list"><a href=""><img src="./images/top/insta.png" alt="インスタグラム"></a></li>
                     </ul>
+                    <ul class="sp_nav">
+                        <li>インスタ</li>
+                        <li>フェイスブック</li>
+                        <li>ハンバーガーメニュー</li>
+                    </ul>
+                    <div id="ham-menu">
+                        <p>項目1</p>
+                        <p>項目2</p>
+                        <p>項目3</p>
+                        <p>項目4</p>
+                    </div>
                 </nav>
             </div>
         </header>

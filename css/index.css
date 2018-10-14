@@ -3,11 +3,14 @@
 @import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
 
 html {
-  width: 940px;
   font-size: 62.5%;
+  background-color: #f9f8f6;
+}
+
+header, main, footer {
+    width:940px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f9f8f6;
 }
 
 /* ===================================トップページ=================================== */
@@ -80,18 +83,19 @@ main {
     display: block;
     clear: both;
 } 
-
+#main-contents {
+     width: 700px;
+     float: left;
+     margin-right: 10px;
+     flex-direction: row;
+ }
 main:after {
     content:"";
     display: block;
     clear: both;
 }
  
- #main-contents {
-     width: 700px;
-     float: left;
-     margin-right: 10px;
- }
+ 
  #owl-carousel {
     min-width: 700px;
     background-repeat: no-repeat;
@@ -1126,3 +1130,49 @@ border-bottom: 1px solid #e8e4da;
      font-weight: bold;
      font-family: 小塚ゴシック Pro;
 }
+
+
+.sp_nav {
+    display:none;
+}
+
+#ham-menu {
+    display:none;
+}
+
+/* ===================================レスポンシブ=================================== */
+
+
+
+@media (max-width: 550px){ 
+    header, main, footer {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+#header_in {
+    margin: 10px auto 10px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.pc_nav {
+    display:none;
+}
+.sp_nav {
+    display:block;
+}
+#main-contents {
+    width:100%;
+}
+.owl-item {
+    
+}
+}
+
+
+
+
+
+
