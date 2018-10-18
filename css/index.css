@@ -247,12 +247,14 @@ main:after {
     background-repeat: no-repeat;
 }
 
-#side-nav .pagelink  {
+#side-nav .pagelink,  
+#side-nav .categories {
     background-color: white;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-#side-nav .pagelink h3 {
+#side-nav .pagelink h3, 
+#side-nav .categories h3 {
     background-color: #887f69;
     height: 45px;
     width: 220px;
@@ -263,8 +265,9 @@ main:after {
 #side-nav .pagelink a {
     display: block;
     padding-top: 15px;
-    padding-bottom: 26px;
+    padding-bottom: 15px;
     padding-left: 20px;
+    position:relative;
     
 }
 
@@ -281,8 +284,9 @@ main:after {
 #side-nav .categories a {
     display: block;
     padding-top: 15px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
     padding-left: 20px;
+    position:relative;
 }
 
 #side-nav .categories ul {
@@ -407,6 +411,48 @@ main:after {
      padding-left: 40px;
 }
 
+#side-nav .pagelink a:after,
+#side-nav .categories a:after {
+    content:"";
+    display:block;
+     
+    width:8px;
+    height:8px;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+   
+    position:absolute;
+    right: 15px;
+    top:0;
+    bottom:0;
+    margin:auto;
+
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#side-nav .categories li a:after {
+    content:"";
+    display:block;
+     
+    width:8px;
+    height:8px;
+    border-top: #b8b8b8 2px solid;
+    border-right: #b8b8b8 2px solid;
+   
+    position:absolute;
+    right: 15px;
+    top:0;
+    bottom:0;
+    margin:auto;
+
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 /* ガイド */
 
@@ -514,6 +560,9 @@ main:after {
     margin-top: 5px;
 }
 
+#guide .sp_shopping-guide img {
+    display: none;
+}
 
 
 #guide .shopping-guide .payment p {
@@ -695,6 +744,10 @@ main #main-contents #main-nav ul li img {
 
 #mitamono h2 {
     margin-bottom: 30px;
+}
+
+#mitamono .sp_items img {
+    display: none;
 }
 
 #mitamono .item-box {
@@ -1150,6 +1203,45 @@ border-bottom: 1px solid #e8e4da;
         margin-right: 0px;
         margin-left: 0px;
     }
+    
+#header_in .logo {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header #top-nav {
+    text-align: center;
+}
+
+.sp_nav {
+    display:block;
+}
+
+header #top-nav .sp_nav {
+    list-style-type: none;
+    margin: 0 auto 0;
+    margin-bottom: 15px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	width: 180px;
+}
+
+header ul li {
+    margin: 0 10px 0;
+    padding: 0 5px;
+    text-align: center;
+}
+
+header #top-nav .sp_nav li img{
+    width: 170%;
+	margin: 0px;
+	padding: 0px;
+    text-align: center;
+}
+
 #header_in {
     margin: 10px auto 10px;
     display: block;
@@ -1160,16 +1252,117 @@ border-bottom: 1px solid #e8e4da;
 .pc_nav {
     display:none;
 }
-.sp_nav {
-    display:block;
-}
+
 #main-contents {
     width:100%;
 }
-.owl-item {
-    
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 2px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0px;
+    margin-left: 0px;
 }
+
+.owl-theme .owl-dots {
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 180px;
+    text-align: left;
 }
+
+
+
+#mitamono .items img {
+    display: none;
+}
+
+#mitamono .sp_items img {
+    display: block;
+    margin: 0 auto 0;
+    margin-top: 0px;
+    text-align: center;
+    width: 130px;
+}
+
+#main-contents .item-box ul{
+    display:flex;
+    flex-wrap: wrap;
+    width: 365px;
+    margin: 0 auto 0;
+}
+
+#main-contents .item-box ul li,
+#main-contents .item-box ul img {
+    display:flex;
+    flex-wrap: wrap;
+    width: 170px;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+.items {
+    margin-top: 30px;
+}
+
+#main-contents .item-box .en{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top:10px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+#guide .shopping-guide a {
+    display: none;
+}
+
+#guide .sp_shopping-guide img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 180px;
+}
+
+#guide .shopping-guide .guide {
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    display: block;
+    height: 260px;
+    width: 365px;
+    background-color: white;
+    float: left;
+}
+
+#guide .shopping-guide .payment {
+    border-left: 0px;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    height: 260px;
+    width: 365px;
+    background-color: white;
+    float: left;
+}
+
+#side-nav {
+    width: 100%;
+} 
+}
+
+
 
 
 
