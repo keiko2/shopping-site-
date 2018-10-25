@@ -9,31 +9,52 @@
         
    <!-- Mobile Specific Metas––––––––––––––––––––––––––––––––––––––––––––––––––-->
    
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- CSS––––––––––––––––––––––––––––––––––––––––––––––––––-->
    
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/index.css">
+  
+  <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- ハムメニューとスライダーを動作させるために追加 -->
+        <script src="jquery/init.js"></script>
     </head>
     <body>
         <header>
             <div id="header_in" class="container">
-                <h1 id="logo">
-                    <a href="#"><img src="./images/top/logo.png" alt="トップロゴ"></a>
+                <h1 class="logo">
+                    <a href="#"><img src="./images/top/logo.png" alt="ロゴ"></a>
                 </h1>
                 <nav id="top-nav">
-                    <ul>
+                    <ul class="pc_nav">
                         <li><a href=""><img src="./images/top/menu_login.png" alt="ログイン"></a></li>
                         <li><a href=""><img src="./images/top/menu_cart.png" alt="カート"></a></li>
                         <li><a href=""><img src="./images/top/menu_mypage.png" alt="マイページ"></a></li>
                         <li><a href=""><img src="./images/top/menu_guide.png" alt="ショッピングガイド"></a></li>
                         <li><a href=""><img src="./images/top/facebook.png" alt="フェイスブック"></a></li>
-                        <li><a href=""><img src="./images/top/insta.png" alt="インスタグラム"></a></li>
+                        <li class="last-list"><a href=""><img src="./images/top/insta.png" alt="インスタグラム"></a></li>
                     </ul>
+                    <ul class="sp_nav">
+                        <li><a href=""><img src="./images/top_sp/insta.png" alt="インスタグラム"></a></li>
+                        <li><a href=""><img src="./images/top_sp/fb.png" alt="フェイスブック"></a></li>
+                        <li><a href=""><img src="./images/top_sp/menu_icon.png" alt="ハンバーガーメニュー"></a></li>
+                    </ul>
+                    
+     <!--––––––––––––––––––––––––––––––––––––––––––––
+                    <div id="ham-menu">
+                        <p>項目1</p>
+                        <p>項目2</p>
+                        <p>項目3</p>
+                        <p>項目4</p>
+                    </div>
+    ––––––------------------------------------------->
+    
                 </nav>
             </div>
         </header>
@@ -95,6 +116,42 @@
                             </section>
                             </div>
                         </div>
+                        <div id="sp_item-photo">
+                            <div class="item-photo1">
+                                <section class="itembox">
+                                    <a href="#"><img src="./images/products/pro_img_01.jpg" alt="商品画像1"></a>
+                                </section>
+                                <section class="itembox">
+                                    <a href="#"><img src="./images/products/pro_img_02.jpg" alt="商品画像2"></a>
+                                </section>
+                                <section class="itembox">
+                                    <a href="#"><img src="./images/products/pro_img_03.jpg" alt="商品画像3"></a>
+                                </section>
+                                <section class="itembox">
+                                    <a href="#"><img src="./images/products/pro_img_04.jpg" alt="商品画像6"></a>
+                                </section>
+                                 <section class="itembox">
+                                    <a href="#"><img src="./images/products/pro_img_05.jpg" alt="商品画像7"></a>
+                                </section>
+                            </div>
+                            <div class="item-photo2">
+                            <section class="itembox">
+                                <a href="#"><img src="./images/products/gray_pro_img.jpg" alt="商品画像4"></a>
+                            </section>
+                            <section class="itembox">
+                                <a href="#"><img src="./images/products/gray_pro_img.jpg" alt="商品画像5"></a>
+                            </section>
+                            <section class="itembox">
+                                <a href="#"><img src="./images/products/gray_pro_img.jpg" alt="商品画像8"></a>
+                            </section>
+                            <section class="itembox">
+                                <a href="#"><img src="./images/products/gray_pro_img.jpg" alt="商品画像9"></a>
+                            </section>
+                             <section class="itembox">
+                                <a href="#"><img src="./images/products/gray_pro_img.jpg" alt="商品画像10"></a>
+                            </section>
+                            </div>
+                        </div>
                     </div>
                     <section id="size-color">
                      <h2 class="color-size">
@@ -112,8 +169,8 @@
                      </tbody>
                       <tr>
                         <td>サイズ</td>
-                        <td>&#9633;</td>
-                        <td>&#9633;</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
                       </tr>
                       </tbody>
                     </table>
@@ -125,10 +182,19 @@
                      <a href="#"><img src="./images/products/add_to_cart.png" alt="カート"></a>
                     </section>
                     </div>
+                    <div class="sp_price-box">
+                       <h2 class="price"><a href="#"><img src="./images/products/title_price.png" alt="価格"></a><p class="price"><span>&yen;</span>1,000</p> <p class="tax">(tax in)</p></h2>
+                    <section id="cart">
+                     <a href="#"><img src="./images/products/add_to_cart.png" alt="カート"></a>
+                    </section>
+                    </div>
                     <div class="quantity">
                        <h3 class="quantity-size"><img src="./images/products/title_quantity.png" alt="サイズ"></h3>
                        <input type="text">
                     </div>
+                    <section id="sp_cart">
+                     <a href="#"><img src="./images/products/add_to_cart.png" alt="カート"></a>
+                    </section>
                     
                 
                 <div class="about-item">
@@ -156,10 +222,29 @@
                     </table>
                      </div>
                   </section>
+                <section id="size-color2_sp">
+                    <div class="table">
+                        <table border="1">
+                    <tbody>
+                      <tr>
+                        <th>カラー</th>
+                        <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                      </tr>
+                      <tr>
+                        <th>サイズ</th>
+                        <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                     </div>
+                  </section>
                 </div>  
                 <section id="mitamono">
-                <h2 class="item">
+                    <h2 class="items">
                         <a href="#"><img src="./images/list/recent_pro_pc.png" alt="最近見たもの"></a>
+                    </h2>
+                    <h2 class="sp_items">
+                        <a href="#"><img src="./images/list/title_recent_pro.png" alt="最近見たもの"></a>
                     </h2>
                     <section class="item-box">
                     <ul>
@@ -173,6 +258,9 @@
                     <section id="guide">    
                     <h2 class="shopping-guide">
                         <a href="#"><img src="./images/top/title_guide.png" alt="ショッピングガイド"></a>
+                    </h2>
+                    <h2 class="sp_shopping-guide">
+                        <a href="#"><img src="./images/top_sp/title_guide.png" alt="ショッピングガイド"></a>
                     </h2>
                     <section class="shopping-guide">
                         <div class="guide">

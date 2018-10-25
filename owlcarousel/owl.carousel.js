@@ -3444,9 +3444,6 @@
 		$.support.transform = new String(prefixed('transform'));
 		$.support.transform3d = tests.csstransforms3d();
 	}
-	
-
 
 })(window.Zepto || window.jQuery, window, document);
 
-	
