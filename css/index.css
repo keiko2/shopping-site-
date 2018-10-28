@@ -336,12 +336,13 @@ main:after {
 #side-nav .about1 .shop-foto img {
     display: block;
     margin: 12px;
+    margin-top: 25px;
 }
 
 #side-nav .about1 p {
     display: block;
     margin: 10px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.3rem;
     line-height: normal;
 }
@@ -382,12 +383,14 @@ main:after {
 #side-nav .about2 .shop-foto img {
     display: block;
     margin: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #side-nav .about2 p {
     display: block;
     margin: 10px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.3rem;
     line-height: normal;
 }
@@ -1269,8 +1272,6 @@ border-bottom: 1px solid #e8e4da;
 
 header #top-nav {
     text-align: center;
-    font-size: 18px;
-    
 }
 
 
@@ -1314,17 +1315,31 @@ header #top-nav .sp_nav li img{
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 0px;
-    margin-left: 0px;
+    margin-left: 5px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    background: no-repeat;
+    width: 360px;
+    margin-left: 10px;
+    margin-right: 7px;
+    overflow: hidden;
 }
 
 .owl-theme .owl-dots {
-    margin-left: 0px;
+    margin-left: 5px;
     padding-left: 0px;
-    width: 180px;
+    width: 200px;
     text-align: left;
 }
 
-
+#mitamono .item-box {
+    display: block;
+    margin-top: 10px;
+    border: #f9f8f6;
+    margin: 0 0 0 5px;
+}
 
 #mitamono .items img {
     display: none;
@@ -1344,10 +1359,11 @@ header #top-nav .sp_nav li img{
 }
 
 #main-contents .item-box ul{
+    text-align: center;
     display:flex;
     flex-wrap: wrap;
     width: -webkit-fill-available;
-    margin: 0 0 0 7px;
+    margin: 0 0px 0 5px;
 }
 
 #main-contents .item-box ul li,
@@ -1357,13 +1373,13 @@ header #top-nav .sp_nav li img{
     width: 100%;
     margin: auto;
     margin-bottom: 5px;
-     text-align: center;
 }
 
 #main-contents .item-box ul li, #main-contents .item-box_last ul img {
-    width: 47%;
-    margin-left: 0px;
+    width: 45%;
     margin: auto;
+    margin-right: 4px;
+    margin-left: 0px;
     margin-bottom: 5px;
 }
 
@@ -1381,38 +1397,8 @@ header #top-nav .sp_nav li img{
     text-align: left;
 }
 
-#guide .shopping-guide .guide h3 {
-    font-family: sans-serif;
-    font-size: 24px;
-    color: #887f69;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-}
-
 #guide .shopping-guide a {
     display: none;
-}
-
-#guide .shopping-guide p {
-    font-family: sans-serif;
-    font-size: 20px;
-    color: black;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 18px;
-    margin-bottom: 0px;
-}
-
-#guide .shopping-guide .guide h4 {
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #887f69;
-    font-weight: bold;
-    padding-left: 20px;
-    margin-bottom: 5px;
 }
 
 #guide .sp_shopping-guide img {
@@ -1421,45 +1407,34 @@ header #top-nav .sp_nav li img{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 50%;
-}
-
-#guide .shopping-guide .guide img {
-    padding-left: 20px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 2px;
-    margin-top: 5px;
-    width: 55%;
+    width: 180px;
 }
 
 #guide .shopping-guide .guide {
     margin: auto;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 5px;
-    padding-bottom: 30px;
     display: block;
-    height: auto;
-    width: -webkit-fill-available;
+    height: 260px;
+    width: 360px;
     background-color: white;
 }
 
 #guide .shopping-guide .payment {
-    border-left: 0px;
     margin: auto;
-    margin-left: 5px;
+    margin-left: 8px;
     margin-top: 0px;
     margin-bottom: 20px;
     display: block;
     height: 260px;
-    width: 365px;
+    width: 360px;
     background-color: white;
 }
 
 #side-nav .itemsearch {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 7px;
 }
 
 #side-nav .itemsearch h3 {
@@ -1482,16 +1457,17 @@ header #top-nav .sp_nav li img{
 #side-nav .categories h3 {
     background-color: #887f69;
     height: 45px;
-    width: 100%;
+    width: 360px;
     text-align: left;
-    margin: 5px;
+    margin: 0px 7px 0px 7px;
 }
 
 #side-nav .pagelink h3 {
     background-color: #887f69;
     height: 45px;
-    width: 97.5%;
-    margin: 5px;
+    width: 360px;
+    text-align: left;
+    margin: 0px 7px 0px 7px;
 }
 
 #side-nav .pagelink a {
@@ -1589,27 +1565,34 @@ header #top-nav .sp_nav li img{
    float: left;
 }
 
-#side-nav .about1  .shop-foto img {
-   display: block;
-   margin-right: 5px;
-   float: left;
+#side-nav .about1 .shop-foto img {
+    display: block;
+    margin: 12px;
+    margin-top: 15px;
 }
 
-#side-nav .about1 a {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 10px;
-    margin-right: 10px;
-    position:relative;
-}
+
+
+
+
 #side-nav .about1 p {
     width: 150px;
     display: block;
     font-size: 12px;
     letter-spacing: 0.3rem;
     line-height: normal;
+    float: left;
+}
+
+#side-nav .about1  .shop-foto .btn1 {
+    padding-top: 15px;
+}
+
+
+#side-nav .about2 .shop-foto img {
+display: block;
+    margin: 5px;
+    margin-top: 25px;
     float: left;
 }
 
@@ -1640,6 +1623,7 @@ header #top-nav .sp_nav li img{
 #side-nav .about2  .shop-foto img {
    display: block;
    margin-right: 5px;
+   margin-top: 15px;
    float: left;
 }
 
@@ -1778,8 +1762,10 @@ main #main-contents .main_image2 .image2 {
     margin: 0 auto 0;
     margin-top: 0px;
     text-align: center;
-    width: 50%;
+    width: 130px;
 }
+
+
 
 /* ===================================item=================================== */
 

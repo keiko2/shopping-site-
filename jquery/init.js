@@ -7,5 +7,10 @@ $(document).ready(function(){
     var img_src = $(this).attr("src");
     $("#photoArea .large-box img").attr("src", img_src);
   });
+  
+  $("#sp_item-photo .itembox img").click(function(){
+    var img_src = $(this).attr("src");
+    $("#photoArea .large-box img").attr("src", img_src);
+  });
 
 });
