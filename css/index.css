@@ -1772,7 +1772,7 @@ main #main-contents .main_image2 .image2 {
 #item-contents .item-name {
     display: block;
     border-bottom: 1px solid white;
-    width: 580px;
+    width: auto;
     height: 40px;
     margin: 0px;
     padding-left: 5px;
