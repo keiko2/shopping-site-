@@ -86,6 +86,11 @@ main {
     display: block;
     clear: both;
 } 
+
+main #main-nav ul {
+    border: 1px solid #e8e4da;
+    border-radius: 2px;
+}
 #main-contents {
      width: 700px;
      float: left;
@@ -611,7 +616,7 @@ footer #page-top {
     margin-right: 0px;
     padding-right: 0px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #887f69;
+    border-bottom: 1px solid #887f69;
 }
 
 footer #sp_page-top {
@@ -647,7 +652,12 @@ footer #copyright {
 /* メイン */
 
 main #mein-contents .main_image2 {
-    width: 700px;
+    width: 655px;
+    height: 200px;
+}
+
+main #mein-contents .main_image2 .image2 {
+    width: 655px;
     height: 200px;
 }
 
@@ -656,6 +666,7 @@ main #main-contents #main-nav ul {
     display: block;
     background-color: #e8e4da;
     padding-left: 5px;
+    margin-bottom: 10px;
 }
 
 main #main-contents #main-nav ul li {
@@ -743,6 +754,7 @@ main #main-contents #main-nav ul li img {
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-left: 2px;
 }
 
 #main-contents .btn .btn1 p {
@@ -762,6 +774,8 @@ main #main-contents #main-nav ul li img {
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-right: 2px;
+    
 }
 
 #main-contents .btn .btn2 p {
@@ -779,6 +793,7 @@ main #main-contents #main-nav ul li img {
 }
 
 #mitamono .item-box {
+    width: 100%;
     display: block;
     margin-top:10px;
     border: #f9f8f6;
@@ -790,7 +805,8 @@ main #main-contents #main-nav ul li img {
 }
 
 #mitamono .item-box ul li {
-   display: block;
+    width: 217.3px;
+    display: block;
     margin: 2px;
     background-color: white;
     padding: 6px;
@@ -952,6 +968,7 @@ main #main-contents #main-nav ul li img {
     background-color: white;
     height: auto;
     width: 700px;
+    margin-top: 10px;
 }
 
 #item-contents #size-color {
@@ -1224,6 +1241,7 @@ border-bottom: 1px solid #e8e4da;
 #item-contents #size-color table tr td input {
     width: 25px;
     border: 2px solid #e8e4da;
+    border-radius: 2px;
     vertical-align: middle;
     text-align: center;
     color: #887f69;
@@ -1417,7 +1435,7 @@ header #top-nav .sp_nav li img{
     margin-bottom: 5px;
     display: block;
     height: 260px;
-    width: 360px;
+    width: 355px;
     background-color: white;
 }
 
@@ -1428,13 +1446,13 @@ header #top-nav .sp_nav li img{
     margin-bottom: 20px;
     display: block;
     height: 260px;
-    width: 360px;
+    width: 355px;
     background-color: white;
 }
 
 #side-nav .itemsearch {
     margin-left: 10px;
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
 #side-nav .itemsearch h3 {
@@ -1454,20 +1472,28 @@ header #top-nav .sp_nav li img{
     width: 100%;
 } 
 
+#side-nav .pagelink,  
+#side-nav .categories {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 #side-nav .categories h3 {
     background-color: #887f69;
     height: 45px;
-    width: 360px;
+    width: 357px;
     text-align: left;
-    margin: 0px 7px 0px 7px;
+    margin: auto;
+    margin-left: 0px 2px 0px 0px;
 }
 
 #side-nav .pagelink h3 {
     background-color: #887f69;
     height: 45px;
-    width: 360px;
+    width: 357px;
     text-align: left;
-    margin: 0px 7px 0px 7px;
+    margin: auto;
+    margin-left: 0px 2px 0px 0px;
 }
 
 #side-nav .pagelink a {
@@ -1524,10 +1550,11 @@ header #top-nav .sp_nav li img{
     display: block;
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-left: 20px;
+    padding-left: 15px;
     border-bottom: 2px solid #f9f8f6;
     margin: auto;
     margin-top: 0px;
+    margin-left: 3px;
 }
 
 #side-nav .categories ul li img {
@@ -1539,13 +1566,15 @@ header #top-nav .sp_nav li img{
     display: block;
     background-color: white;
     margin: 5px;
+    margin-left: 9px;
+    margin-right: 8px;
 }
 
 #side-nav .about1  h3 {
     display: block;
     background-color: #887f69;
     height: 45px;
-    width: 100%;
+    width: 358px;
     text-align: left;
     margin-top: 320px;
     margin-bottom: 20px;
@@ -1600,6 +1629,8 @@ display: block;
     display: block;
     background-color: white;
     margin: 5px;
+    margin-left: 9px;
+    margin-right: 8px;
 }
 
 #side-nav .about2  h3 {
@@ -1661,7 +1692,7 @@ footer #sp_page-top {
     width: 365px;
     margin-right: 5px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #887f69;
+    border-bottom: 1px solid #887f69;
 }
 
 footer #sp_page-top img {
@@ -1705,24 +1736,28 @@ footer #copyright {
 
 main #main-contents #main-nav ul {
     padding: 0px;
-    width: 365px;
+    width: 358px;
     height: 40px;
     display: block;
     background-color: #e8e4da;
     vertical-align: middle;
     font-size: 18px;
-    margin: 0 5px 10px 5px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: left;
 }
 
 main #main-contents .main_image2 {
-    width: 365px;
-    margin-left: 5px;
+    width: 370px;
+    margin-left: 2px;
     margin-right: 5px;
     overflow: hidden;
 }
 
 main #main-contents .main_image2 .image2 {
-    width: 430px;
+    width: 115%;
+    margin-left: 8px;
 }
 
 #main-contents .btn .btn1 {
@@ -1736,7 +1771,7 @@ main #main-contents .main_image2 .image2 {
     font-weight: bold;
     text-align: center;
     padding: 0px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -1752,7 +1787,7 @@ main #main-contents .main_image2 .image2 {
     font-weight: bold;
     text-align: center;
     padding: 0px;
-    margin-right: 5px;
+    margin-right: 8px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -1786,6 +1821,7 @@ main #main-contents .main_image2 .image2 {
     letter-spacing: 0.3rem;
     padding-top: 20px;
     padding-bottom: auto;
+    padding-left: 2px;
     float: left;
 }
 
@@ -1800,6 +1836,7 @@ main #main-contents .main_image2 .image2 {
     padding-bottom: 20px;
     color: #887f69;
     margin-bottom: 20px;
+    padding-left: 2px;
 }
 
 #photoArea {
